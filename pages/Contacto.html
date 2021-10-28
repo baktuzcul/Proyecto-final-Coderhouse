@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Esta es mi pagina de contacto, espero que me envies un mensaje">
+    <meta name="keywords" content="CONTACTO, PRESUPUESTO, EVENTOS, CORREO">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <title>Contacto - Marina Martins</title>
+</head>
+
+<body>
+    <ul class="nav nav-pills justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Foto</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./Galeria.html">Social</a></li>
+                <li><a class="dropdown-item" href="./Galeria.html">Moda</a></li>
+                <li><a class="dropdown-item" href="./Galeria.html">Producto</a></li>
+            </ul>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Video</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./video.html">Social</a></li>
+                <li><a class="dropdown-item" href="./video.html">Moda</a></li>
+                <li><a class="dropdown-item" href="./video.html">Producto</a></li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./Contacto.html">Contacto</a>
+        </li>
+    </ul>
+    <main>
+        <section class="section-contact">
+            <div class="container">
+                <h1>Contactame por favor!</h1>
+                <p>Enviame tu consulta, idea , proyecto.. te respondere dentro de un plazo maximo de 24hs.</p>
+                <form>
+                    <div class="form-group">
+                        <label for="firstname">Nombre</label>
+                        <input type="text" name="firstname" id="firstname" required class="form-element" placeholder="Marina" />
+                    </div>
+                    <div class="form-group">
+                        <label for="lastname">Apellido</label>
+                        <input type="text" name="lastname" id="lastname" required class="form-element" placeholder="Martins" />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo electronico</label>
+                        <input type="email" name="email" id="email" required class="form-element" placeholder="Marina@correo.com" />
+                    </div>
+                    <div class="form-group full">
+                        <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210147.3970753242!2d-58.57338494756603!3d-34.61546111637759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1634696870857!5m2!1ses-419!2sar"
+                                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+                        <label for="message">Mensaje:</label>
+                        <textarea name="message" id="message" class="form-element" placeholder="Hola! Te pido presupuesto para.."></textarea>
+                    </div>
+                    <div class="submit-group">
+                        <input type="submit" value="Enviar mensaje" />
+                    </div>
+
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="text-center">Buenos Aires - Argentina // 2021</p>
+        <div class="footer__redes">
+            <a class="redes__enlace" href="#"><i class="fab fa-facebook-f enlace__icon"></i></a>
+            <a class="redes__enlace" href="#"><i class="fab fa-whatsapp enlace__icon"></i></a>
+            <a class="redes__enlace" href="#"><i class="fab fa-instagram enlace__icon"></i></a>
+            <a class="redes__enlace" href="#"><i class="fab fa-linkedin-in enlace__icon"></i></a>
+        </div>
+    </footer>
+    <script src="../js/bootstrap.bundle.min.js "></script>
+    <script src="../js/main.js "></script>
+</body>
+
+</html>

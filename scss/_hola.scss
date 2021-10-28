@@ -1,0 +1,25 @@
+.hola__marina {
+    border-radius: 50%;
+}
+
+.hola__trabajo {
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@mixin tipografia {
+    font-family: 'Comfortaa', cursive;
+}
+
+.hola__quiensoy--p {
+    @include tipografia();
+}
+
+.hola__saludo--h1 {
+    @include tipografia();
+}
+
+.hola {
+    @include tipografia();
+}

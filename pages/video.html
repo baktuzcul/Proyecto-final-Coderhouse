@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Estos son mis videos realizados sobre algunos emprendimientos">
+    <meta name="keywords" content="PRODUCTO, DEMO, REEL, INSTAGRAM, EMPRENDIMIENTO, VIDEO">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <title>Video - Marina Martins</title>
+</head>
+
+<body>
+    <header>
+        <ul class="nav nav-pills justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Foto</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./Galeria.html">Social</a></li>
+                    <li><a class="dropdown-item" href="./Galeria.html">Moda</a></li>
+                    <li><a class="dropdown-item" href="./Galeria.html">Producto</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Video</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./video.html">Social</a></li>
+                    <li><a class="dropdown-item" href="./video.html">Moda</a></li>
+                    <li><a class="dropdown-item" href="./video.html">Producto</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./Contacto.html">Contacto</a>
+            </li>
+        </ul>
+    </header>
+
+    <div class="container-fluid">
+        <h1 class="videodescripcion">Videos para tu emprendimiento.</h1>
+        <div class="container Videos">
+            <div class="box Videos__contenedor">
+                <video src="../video/1.mp4" type="video/mp4" loop class="clip Videos__archivo" muted></video>
+            </div>
+            <div class="box Videos__contenedor">
+                <video src="../video/2.mp4" type="video/mp4" loop class="clip Videos__archivo" muted></video>
+            </div>
+            <div class="box Videos__contenedor">
+                <video src="../video/4.mp4" type="video/mp4" loop class="clip Videos__archivo" muted></video>
+            </div>
+            <div class="box Videos__contenedor">
+                <video src="../video/7.mp4" type="video/mp4" loop class="clip Videos__archivo" muted></video>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p class="text-center">Buenos Aires - Argentina // 2021</p>
+        <div class="footer__redes">
+            <a class="redes__enlace" href="#"><i class="fab fa-facebook-f enlace__icon"></i></a>
+            <a class="redes__enlace" href="#"><i class="fab fa-whatsapp enlace__icon"></i></a>
+            <a class="redes__enlace" href="#"><i class="fab fa-instagram enlace__icon"></i></a>
+            <a class="redes__enlace" href="#"><i class="fab fa-linkedin-in enlace__icon"></i></a>
+        </div>
+    </footer>
+    <script>
+        const clip = document.querySelectorAll('.clip');
+        for (let i = 0; i < clip.length; i++) {
+
+            clip[i].addEventListener('mouseenter', function(e) {
+                clip[i].play()
+            })
+            clip[i].addEventListener('mouseout', function(e) {
+                clip[i].pause()
+            })
+        }
+    </script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
